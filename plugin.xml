@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="io.hpd.cordova.gimbal"
+    version="1.0.0">
+
+    <name>Gimbal</name>
+    <description>Cordova Gimbal Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,gimbal,ibeacon</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/Gimbal.js" name="Gimbal">
+        <clobbers target="Gimbal" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Gimbal">
+                <param name="ios-package" value="Gimbal" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Gimbal.h" />
+        <source-file src="src/ios/Gimbal.m" />
+
+        <framework src="CoreBluetooth.framework" />
+        <framework src="CoreLocation.framework" />
+        <framework src="CoreData.framework" />
+        <framework src="libz.dylib" />
+        <framework src="MapKit.framework" />
+        <framework src="Security.framework" />
+    </platform>
+
+</plugin>
