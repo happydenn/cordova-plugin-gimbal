@@ -1,6 +1,6 @@
 # Cordova Gimbal Plugin
 
-A Cordova plugin for scanning and interacting with Qualcomm Gimbal beacons.
+A Cordova plugin for scanning and interacting with [Qualcomm Gimbal](http://gimbal.com) beacons.
 
 
 ## Supported Platforms
@@ -22,11 +22,19 @@ A Cordova plugin for scanning and interacting with Qualcomm Gimbal beacons.
 
 ## Installation
 
-Install the plugin using the following command.
+### Plugin Setup
+
+```text
+cordova plugin add io.hpd.cordova.gimbal
+```
+
+Or, alternatively you can install the bleeding edge version from Github:
 
 ```text
 cordova plugin add https://github.com/happydenn/cordova-plugin-gimbal.git
 ```
+
+### Gimbal SDK Setup
 
 From the Gimbal SDK, drag and drop the following frameworks from the __Frameworks__ folder to the __Frameworks__ group inside the Xcode project. Be sure to copy the files when asked by Xcode.
 
