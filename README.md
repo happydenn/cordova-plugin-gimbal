@@ -38,6 +38,15 @@ FYX.framework
 NetworkServices.embeddedframework
 ```
 
+Add the following to your project's Info.plist to enable using Bluetooth beacons in background mode.
+
+```xml
+<key>UIBackgroundModes</key>
+<array>
+    <string>bluetooth-central</string>
+</array>
+```
+
 Finally for iOS 8 and later, you need to add a new entry to your Xcode project's Info.plist to properly request for permission to use the location service which is required by Gimbal SDK.
 
 ```xml
