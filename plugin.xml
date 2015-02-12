@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="io.hpd.cordova.gimbal" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="io.hpd.cordova.gimbal"
+    version="1.0.0">
 
     <name>Gimbal</name>
     <description>Cordova Gimbal Plugin</description>
+    <author>Denny Tsai</author>
     <license>Apache 2.0</license>
     <keywords>cordova,gimbal,ibeacon</keywords>
-    <repo></repo>
-    <issue></issue>
+    <repo>https://github.com/happydenn/cordova-plugin-gimbal.git</repo>
+    <issue>https://github.com/happydenn/cordova-plugin-gimbal/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0" />
+    </engines>
 
     <js-module src="www/Gimbal.js" name="Gimbal">
         <clobbers target="Gimbal" />
