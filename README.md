@@ -1,3 +1,5 @@
+_NOTICE: This plugin is not being maintained anymore. Please use the new plugin that's updated for Gimbal v2 SDK and compatible with both iOS and Android. The new plugin is located at https://github.com/happydenn/cordova-plugin-gimbal2_
+
 # Cordova Gimbal Plugin
 
 A Cordova plugin for scanning and interacting with [Qualcomm Gimbal](http://gimbal.com) beacons.
